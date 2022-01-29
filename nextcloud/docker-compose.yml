@@ -20,7 +20,7 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
-    image: nextcloud:casc
+    image: local/nextcloud:casc
     build:
       context: .
       args:
