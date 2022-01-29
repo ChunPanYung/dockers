@@ -22,7 +22,7 @@ echo '
 
                 SSLEngine on
 
-                SSLCertificateFile    /etc/ssl/nextcloud/nextcloud.lan.crt
+                SSLCertificateFile    /etc/ssl/nextcloud/server.lan.crt
                 SSLCertificateKeyFile /etc/ssl/nextcloud/server.lan.key
 
                 <FilesMatch "\.(cgi|shtml|phtml|php)$">
