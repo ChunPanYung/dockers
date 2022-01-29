@@ -26,8 +26,6 @@ services:
       args:
         - EMAIL="${EMAIL}"
         - DOMAIN="${DOMAIN}"
-    env_file:
-      - .env
     container_name: nextcloud_app
     restart: unless-stopped
     ports:
