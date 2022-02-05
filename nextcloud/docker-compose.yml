@@ -3,10 +3,14 @@ version: "2"
 
 volumes:
   app:
+    name: nextcloud_app
   db:
+    name: nextcloud_db
 
 services:
   db:
+    env_file:
+      - .env
     image: mariadb:10.5
     container_name: nextcloud_db
     restart: always
@@ -20,6 +24,8 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
+    env_file:
+      - .env
     image: local/nextcloud:casc
     build:
       context: .
