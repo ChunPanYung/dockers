@@ -1,5 +1,5 @@
 # need root user for package installation
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins
 USER root
 
 ENV sh_docker=/tmp/get-docker.sh
