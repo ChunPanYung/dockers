@@ -2,10 +2,11 @@
 version: "3"
 volumes:
   home:
+    name: jenkins_home
 
 services:
   app:
-    image: jenkins/jenkins:latest
+    image: local/jenkins:casc
     build:
       context: .
     restart: always
