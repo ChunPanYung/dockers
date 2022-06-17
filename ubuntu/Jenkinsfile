@@ -1,0 +1,16 @@
+// Declarative Pipeline
+pipeline {
+    agent any
+
+    stages {
+        stage('Stop') {
+            echo 'Stop Stage'
+        }
+        stage('Build') {
+            echo 'Build Stage'
+        }
+        stage('Start') {
+            echo 'Start Stage'
+        }
+    }
+}
