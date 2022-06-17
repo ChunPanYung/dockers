@@ -4,13 +4,19 @@ pipeline {
 
     stages {
         stage('Stop') {
-            echo 'Stop Stage'
+            steps {
+                echo 'Stop Stage'
+            }
         }
         stage('Build') {
-            echo 'Build Stage'
+            steps {
+                echo 'Build Stage'
+             }
         }
         stage('Start') {
-            echo 'Start Stage'
+            steps {
+                echo 'Start Stage'
+            }
         }
     }
 }
