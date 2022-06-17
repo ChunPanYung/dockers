@@ -1,21 +1,19 @@
 // Declarative Pipeline
 pipeline {
-    agent any
+    agent none
 
     stages {
-        stage('Stop') {
-            steps {
-                echo 'Stop Stage'
-            }
-        }
         stage('Build') {
             steps {
-                echo 'Build Stage'
+                bash '''#!/bin/bash
+                        echo $SHELL
+                        docker build --tag=local/ubuntu:casc .
+                '''
              }
         }
-        stage('Start') {
+        stage('Image List') {
             steps {
-                echo 'Start Stage'
+
             }
         }
     }
