@@ -5,9 +5,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '''#!/bin/bash
-                        echo $SHELL
-                        docker build --tag=local/ubuntu:casc .
+                bash '''
+                    ls
+                    echo $SHELL
+                    docker build --tag=local/ubuntu:casc .
                 '''
              }
         }
