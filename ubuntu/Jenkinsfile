@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''#!/bin/bash
-                    docker build --tag=local/ubuntu:casc ./ubuntu/
+                    # docker build --tag=local/ubuntu:casc ./ubuntu/
                 '''
              }
         }
