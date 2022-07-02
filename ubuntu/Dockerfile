@@ -2,5 +2,5 @@
 FROM ubuntu
 USER root
 RUN apt update
-RUN apt install --yes rsync vim
+RUN apt install --yes rsync
 
